@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtrar Destinos por Categoría</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Filtrar Destinos Turísticos por Categoría</h1>
+
+        <!-- Formulario para ingresar la categoría -->
+        <form id="formulario">
+            <label for="categoria">Ingresa la categoría:</label>
+            <input type="text" id="categoria" name="categoria" placeholder="Ej. Internacional, Playa, Montaña" required>
+            <button type="submit">Buscar</button>
+        </form>
+
+        <!-- Sección para mostrar todas las categorías disponibles -->
+        <section id="todas-categorias">
+            <h2>Categorías Disponibles</h2>
+            <ul id="lista-categorias">
+                <li>Internacional</li>
+                <li>Playa</li>
+                <li>Montaña</li>
+                <li>Histórico</li>
+            </ul>
+        </section>
+
+        <!-- Resultados -->
+        <h2>Resultados</h2>
+        <ul id="lista-destinos"></ul>
+    </div>
+
+    <!-- Enlazamos el archivo JavaScript -->
+    <script src="Clase3.js"></script>
+</body>
+</html>
